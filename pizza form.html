@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Title-->
+        <title>Delicious Pizza - Order Now</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+        <body>
+            <!--Header section-->
+            <header>
+                <h1>Pizza Order Form</h1>
+            </header>
+
+            <!--Main content section-->
+            <main>
+                <form action="#" method="post">
+                    <fieldset>
+                        <!--Personal Information section-->
+                        <legend>Personal Information</legend>
+                        <!--Name Input-->
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <!--Email input-->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <!--Phone input-->
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required><br><br>
+                    </fieldset>
+                    <!--Pizza details section-->
+                    <fieldset>
+                        <legend>Pizza Details</legend>
+                        <!--quantity input-->
+                        <label for="quantity">Number of Pizzas:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+                        <!--Size select-->
+                        <label for="size">Size:</label>
+                        <select id="size" name="size" required>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select><br><br>
+                        <!--Shape radio button-->
+                        <label>Shape:</label><br>
+                        <input type="radio" id="round" name="shape" value="round" checked>
+                        <label for="round">Round</label><br>
+                        <input type="radio" id="square" name="shape" value="square">
+                        <label for="square">Square</label><br>
+                        <!--Toppings checkboxes-->
+                        <label for="toppings">Toppings:</label><br>
+                        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label><br>
+                        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label><br>
+                        <input type="checkbox" id="sausage" name="toppings" value="sausage">
+                        <label for="sausage">Sausage</label><br>
+                        <!--Crust type select-->
+                        <label for="crust">Crust Type:</label>
+                        <select id="crust" name="crust" required>
+                            <option value="deep-dish">Deep Dish</option>
+                            <option value="thin-crust">Thin Crust</option>
+                            <option value="stuffed-crust">Stuffed Crust</option>
+                        </select><br><br>
+                        <!--Delivery method radio buttons-->
+                        <label for="delivery">Delivery Method:</label><br>
+                        <input type="radio" id="take-out" name="delivery" value="take-out" checked>
+                        <label for="take-out">Take Out</label><br>
+                        <input type="radio" id="delivery" name="delivery" value="delivery">
+                        <label for="delivery">Delivery</label><br>
+                        <input type="radio" id="eat-in" name="delivery" value="eat-in">
+                        <label for="eat-in">Eat In</label><br><br>
+                        <!--Additional comments textarea-->
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+                    </fieldset>
+                    <!--Form submission buttons-->
+                    <input type="submit" value="Place Order">
+                    <input type="reset" value="Reset Form">
+                </form>
+            </main>
+            <!--Footer section-->
+            <footer>
+                <!--Image source link-->
+                <p><br<strong> Enjoy your pizza</strong></br> <img src="https://img.freepik.com/free-photo/pepperoni-pizza-with-bell-peppers-tomato-olive-cheese_140725-5881.jpg?w=740&t=st=1707765084~exp=1707765684~hmac=ac692c59e816f26179191c91b303ed15765736d82a0138f01fa017e4d87efc68" height="100" width="100" alt="Delicious pizza"></p> 
+            </footer>
+        </body>
+</html>
